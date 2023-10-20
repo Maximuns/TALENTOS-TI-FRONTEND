@@ -1,0 +1,23 @@
+.flex {
+    display: nome;
+}
+
+.full {
+    height: 100vh;
+    background-color:rgb(30, 15, 31)
+}
+
+
+.logo-wrapper {
+     display:nome;
+
+}
+
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+
+
+    width: 100%;
+}
