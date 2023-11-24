@@ -1,0 +1,92 @@
+@import url(http://use.fontawesome.com/releases/v6.4.2/css/all.css);
+@import url(http://fonts.googleapis.com/css?family=MUli);
+
+:root {
+    --primary: #ff6d39;
+    --secondary:#38302d;
+    --white:#ffffff;
+}
+
+.card {
+    display: flex;
+    align-items:conter;
+    font-family:"muli";
+}
+.left {
+    content:"";
+    height: 395px;
+    width: 340px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--primary);
+    margin-left: 93x;
+    border-radius: 0% 50% 50% 0%;
+    position: absolute;
+    z-index: 2;
+
+    &img{
+        position: absolute;
+        margin-left: -50px;
+        margin-top: -50px;
+        width: 420px;
+        transform: rotate(25deg);
+        opacity: 0;
+        transition: opacity .8s ease;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+}
+.right {
+    content:"";
+    height: 395x;
+    width: 550px;
+    background-color: var(--secondary);
+    margin-left: 93x;
+}
+
+.product-info {
+    position: absolute;
+    margin-left: 245px;
+    height: 394px;
+    width: 305px;
+
+    & .product-name {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 21px 0 0;
+    
+    & h1 {
+        color: var(--primary);
+        font-weight: bold;
+        font-size: 22px;
+        }
+
+        &.action {
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        gap: 12px;
+
+        & i {
+            transition: 0.3s all ease;
+        }
+
+        & i:hover {
+            color: var(--primary);
+            cursor: pointer;
+          }
+       }
+    }
+        & .details {
+         margin-top: 84px;
+        
+        & h3 {
+            color:#ffffff
+        }
+
+    }
+}
